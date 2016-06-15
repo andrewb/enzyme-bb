@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "server": "webpack-dev-server --content-base build/"
+    "start": "webpack-dev-server --content-base build/"
   },
   "author": "Andrew Berry",
   "license": "ISC",
