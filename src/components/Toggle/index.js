@@ -1,5 +1,6 @@
 import React from 'react';
 import { trim } from 'lodash';
+import 'stylesheets/components/toggle.css';
 
 class Toggle extends React.Component {
   constructor(props) {

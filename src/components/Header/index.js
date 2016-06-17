@@ -1,4 +1,5 @@
 import React from 'react';
+import 'stylesheets/components/header.css';
 
 function Header({ title }) {
   return (

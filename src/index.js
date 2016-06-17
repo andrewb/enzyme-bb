@@ -2,6 +2,8 @@ import React from 'react';
 import Inventory from './components/Inventory';
 import Toggle from './components/Toggle';
 import { render } from 'react-dom';
+import 'stylesheets/base';
+import 'stylesheets/components/app';
 
 // NOTE: This file is TRASH! Take a look at the specs in each component's __tests__ folder.
 

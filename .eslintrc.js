@@ -1,5 +1,9 @@
 module.exports = {
-    "extends": "airbnb",
+    "extends": [
+      "airbnb",
+      "plugin:import/errors",
+      "plugin:import/warnings"
+    ],
     "installedESLint": true,
     "plugins": [
         "react"
@@ -10,5 +14,8 @@ module.exports = {
     "rules": {
       "comma-dangle": 0,
       "no-trailing-spaces": 0
+    },
+    "settings": {
+      "import/resolver": "webpack"
     }
 };

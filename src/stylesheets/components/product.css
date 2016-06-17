@@ -1,0 +1,41 @@
+.product {
+  display: flex;
+}
+
+.product__details {
+  flex: 1;
+}
+
+.product__name {
+  margin-bottom: 0.25em;
+  font-size: 1.5em;
+}
+
+.product__sku {
+  margin-bottom: 1em;
+  font-size: 0.75em;
+  color: #666;
+}
+
+.product__price {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+.product__image {
+  margin-right: 2em;
+}
+
+.product__image img {
+  display: block;
+  max-width: 200px;
+}
+
+.product__availability {
+  margin-bottom: 0.5em;
+}
+
+.product__out-of-stock {
+  color: red;
+  font-weight: bold;
+}
