@@ -1,8 +1,10 @@
+@import "helpers/colors";
+
 html, body {
   margin: 0;
   padding: 0;
-  background: #eee;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif;
+  background: $color-shaded;
 }
 
 html {
@@ -21,7 +23,7 @@ button {
   padding: 1em;
   font-weight: bold;
   font-size: 1em;
-  background: #ffee00;
+  background: $color-action;
   border: none;
   cursor: pointer;
   outline: none;

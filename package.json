@@ -17,7 +17,7 @@
       "node_modules/lodash"
     ],
     "moduleNameMapper": {
-      "^.*[.](css|CSS)$": "<rootDir>/src/util/ModuleStub"
+      "^.*[.](css|CSS|scss|SCSS)$": "<rootDir>/src/util/ModuleStub"
     }
   },
   "dependencies": {
@@ -42,8 +42,10 @@
     "eslint-plugin-react": "^5.1.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "jest-cli": "^12.1.1",
+    "node-sass": "^3.8.0",
     "postcss-loader": "^0.9.1",
     "react-addons-test-utils": "^15.1.0",
+    "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"

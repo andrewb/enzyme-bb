@@ -1,0 +1,17 @@
+.inventory {
+  &__list {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    max-width: 48em;
+  }
+
+  &__list-item {
+    margin-bottom: 1em;
+
+    .product {
+      padding: 2em;
+      background: #fff;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import 'stylesheets/components/product.css';
+import 'stylesheets/components/product.scss';
 
 function Product({ sku, name, price, quantity, onAddToCart, image = {} }) {
   return (

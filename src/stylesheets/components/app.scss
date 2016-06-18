@@ -1,0 +1,19 @@
+.app {
+  padding: 2em;
+
+  &__cart {
+    overflow: hidden;
+
+    .toggle {
+      float: right;
+      text-align: right;
+
+      &__content {
+        margin-top: 0.5em;
+        padding: 2em;
+        background: #fff;
+        text-align: left;
+      }      
+    }
+  }
+}

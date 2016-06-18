@@ -1,7 +1,7 @@
 import React from 'react';
 import Product from '../Product';
 import Header from '../Header';
-import 'stylesheets/components/inventory.css';
+import 'stylesheets/components/inventory.scss';
 
 function Inventory({ products = [] }) {
   return (

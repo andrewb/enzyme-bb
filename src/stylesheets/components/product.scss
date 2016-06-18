@@ -1,0 +1,41 @@
+@import "../helpers/colors";
+
+.product {
+  display: flex;
+  &__details {
+    flex: 1;
+  }
+
+  &__name {
+    margin-bottom: 0.25em;
+    font-size: 1.5em;
+  }
+
+  &__sku {
+    margin-bottom: 1em;
+    font-size: 0.75em;
+    color: #666;
+  }
+
+  &__price {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+  }
+
+  &__image {
+    margin-right: 2em;
+    img {
+      display: block;
+      max-width: 200px;
+    }
+  }
+
+  &__availability {
+    margin-bottom: 0.5em;
+  }
+
+  &__out-of-stock {
+    color: $color-negative;
+    font-weight: bold;
+  }
+}
