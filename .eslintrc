@@ -1,0 +1,14 @@
+extends:
+  - airbnb
+  - plugin:import/errors
+  - plugin:import/warnings
+installedESLint: true
+plugins:
+  - react
+env:
+  jest: true
+rules:
+  comma-dangle: ["error", "never"]
+  no-trailing-spaces: 0
+settings:
+  import/resolver: webpack
