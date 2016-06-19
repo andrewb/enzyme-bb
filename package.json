@@ -2,6 +2,10 @@
   "name": "enzyme-bb",
   "version": "1.0.0",
   "description": "",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/andrewb/enzyme-bb.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "jest",
