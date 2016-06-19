@@ -8,7 +8,9 @@ plugins:
 env:
   jest: true
 rules:
-  comma-dangle: ["error", "never"]
+  comma-dangle:
+    - 2
+    - "never"
   no-trailing-spaces: 0
 settings:
   import/resolver: webpack
