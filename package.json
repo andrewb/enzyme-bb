@@ -2,13 +2,13 @@
   "name": "enzyme-bb",
   "version": "1.0.0",
   "description": "",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/andrewb/enzyme-bb.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewb/enzyme-bb.git"
   },
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "start": "webpack-dev-server --hot --inline --content-base build/",
     "build": "webpack --display-error-details"
   },
@@ -36,6 +36,7 @@
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
+    "codeclimate-test-reporter": "^0.3.3",
     "css-loader": "^0.23.1",
     "enzyme": "^2.3.0",
     "eslint": "^2.12.0",
