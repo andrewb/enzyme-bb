@@ -40,7 +40,7 @@ Product.propTypes = {
   quantity: React.PropTypes.number.isRequired,
   onAddToCart: React.PropTypes.func.isRequired,
   image: React.PropTypes.shape({
-    src: React.PropTypes.string,
+    src: React.PropTypes.string
     // IRL we'd have more props...
   })
 };

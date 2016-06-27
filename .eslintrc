@@ -1,5 +1,6 @@
 extends:
   - airbnb
+  - plugin:react/recommended
   - plugin:import/errors
   - plugin:import/warnings
 installedESLint: true
@@ -12,5 +13,11 @@ rules:
     - 2
     - "never"
   no-trailing-spaces: 0
+  react/jsx-no-bind:
+    - 2
+    - ignoreRefs: true
+      allowArrowFunctions: false
+      allowBind: false
+
 settings:
   import/resolver: webpack
