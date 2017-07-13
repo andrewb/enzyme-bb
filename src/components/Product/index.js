@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import Button from '../Button';
 import 'stylesheets/components/product.scss';
 
 function Product({ sku, name, price, quantity, onAddToCart, image = {} }) {
@@ -19,9 +20,11 @@ function Product({ sku, name, price, quantity, onAddToCart, image = {} }) {
             <div className="product__availability">
               <span className="product__quantity">{quantity}</span> in Stock
             </div>
-            <button className="product__cart-button" onClick={() => onAddToCart(sku)}>
-              Add to Cart
-            </button>
+            <div className="product__cart-button">
+              <Button onClick={() => onAddToCart(sku)}>
+                <span>Add to Cart</span>
+              </Button>
+            </div>
           </div>
         }
         {quantity === 0 &&
