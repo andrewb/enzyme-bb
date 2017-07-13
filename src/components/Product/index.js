@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import Button from '../Button';
 import 'stylesheets/components/product.scss';
+import Button from '../Button';
 
-function Product({ sku, name, price, quantity, onAddToCart, image = {} }) {
+function Product({ sku, name, price, quantity, onAddToCart, image }) {
   return (
     <div className="product">
       {image.src &&
@@ -36,6 +36,10 @@ function Product({ sku, name, price, quantity, onAddToCart, image = {} }) {
     </div>
   );
 }
+
+Product.defaultProps = {
+  image: {}
+};
 
 Product.propTypes = {
   sku: PropTypes.string.isRequired,

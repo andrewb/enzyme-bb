@@ -20,7 +20,7 @@ class Toggle extends React.Component {
     return (
       <div className="toggle">
         <button className={btnClasses} onClick={this.onToggleHandler}>
-        {trim(`${this.state.isOpen ? 'Hide' : 'Show'} ${this.props.label}`)}
+          {trim(`${this.state.isOpen ? 'Hide' : 'Show'} ${this.props.label}`)}
         </button>
         {this.state.isOpen &&
           <div className="toggle__content">
@@ -34,7 +34,7 @@ class Toggle extends React.Component {
 
 Toggle.propTypes = {
   label: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node.isRequired
 };
 
 Toggle.defaultProps = {

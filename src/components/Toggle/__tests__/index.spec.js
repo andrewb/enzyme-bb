@@ -4,12 +4,12 @@ import Toggle from '../index';
 
 describe('<Toggle />', () => {
   it('renders a toggle button', () => {
-    const wrapper = shallow(<Toggle />);
+    const wrapper = shallow(<Toggle><div>Hello</div></Toggle>);
     expect(wrapper.find('.toggle__button').exists()).toBe(true);
   });
 
   it('toggles `this.state.isOpen` on click', () => {
-    const wrapper = shallow(<Toggle />);
+    const wrapper = shallow(<Toggle><div>Hello</div></Toggle>);
     // Close it
     wrapper.setState({ isOpen: false });
     // Open it
@@ -21,7 +21,7 @@ describe('<Toggle />', () => {
   });
 
   it('updates the `toggle__button` modifier', () => {
-    const wrapper = shallow(<Toggle />);
+    const wrapper = shallow(<Toggle><div>Hello</div></Toggle>);
     wrapper.setState({ isOpen: false });
     expect(wrapper.find('.toggle__button').hasClass('toggle__button--is-closed')).toBe(true);
     wrapper.setState({ isOpen: true });
@@ -45,7 +45,7 @@ describe('<Toggle />', () => {
   });
 
   it('shows a custom label', () => {
-    const wrapper = shallow(<Toggle label="My Label!" />);
+    const wrapper = shallow(<Toggle label="My Label!"><div>Hello</div></Toggle>);
     expect(wrapper.find('button').text()).toContain('My Label!');
   });
 });
