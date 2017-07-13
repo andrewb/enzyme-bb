@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import 'stylesheets/components/header.scss';
 
@@ -10,7 +11,7 @@ function Header({ title }) {
 }
 
 Header.propTypes = {
-  title: React.PropTypes.string.isRequired
+  title: PropTypes.string.isRequired
 };
 
 export default Header;

@@ -1,5 +1,3 @@
-jest.unmock('../index');
-
 import React from 'react';
 import Product from '../index';
 import { shallow } from 'enzyme';

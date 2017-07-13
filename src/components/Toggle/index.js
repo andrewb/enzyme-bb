@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { trim } from 'lodash';
 import 'stylesheets/components/toggle.scss';
@@ -32,8 +33,8 @@ class Toggle extends React.Component {
 }
 
 Toggle.propTypes = {
-  label: React.PropTypes.string,
-  children: React.PropTypes.node
+  label: PropTypes.string,
+  children: PropTypes.node
 };
 
 Toggle.defaultProps = {

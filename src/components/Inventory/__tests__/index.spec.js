@@ -1,10 +1,11 @@
-jest.unmock('../index');
-
 import React from 'react';
 import Header from '../../Header';
 import Inventory from '../index';
 import Product from '../../Product';
 import { shallow } from 'enzyme';
+
+jest.mock('../../Header');
+jest.mock('../../Product');
 
 describe('<Inventory />', () => {
   it('renders a <Header />', () => {

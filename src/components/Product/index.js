@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import 'stylesheets/components/product.scss';
 
@@ -34,13 +35,13 @@ function Product({ sku, name, price, quantity, onAddToCart, image = {} }) {
 }
 
 Product.propTypes = {
-  sku: React.PropTypes.string.isRequired,
-  name: React.PropTypes.string.isRequired,
-  price: React.PropTypes.number.isRequired,
-  quantity: React.PropTypes.number.isRequired,
-  onAddToCart: React.PropTypes.func.isRequired,
-  image: React.PropTypes.shape({
-    src: React.PropTypes.string
+  sku: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  quantity: PropTypes.number.isRequired,
+  onAddToCart: PropTypes.func.isRequired,
+  image: PropTypes.shape({
+    src: PropTypes.string
     // IRL we'd have more props...
   })
 };

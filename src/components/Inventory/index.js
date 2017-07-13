@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import Product from '../Product';
 import Header from '../Header';
@@ -19,7 +20,7 @@ function Inventory({ products = [] }) {
 }
 
 Inventory.propTypes = {
-  products: React.PropTypes.arrayOf(React.PropTypes.shape(Product.propTypes))
+  products: PropTypes.arrayOf(PropTypes.shape(Product.propTypes))
 };
 
 export default Inventory;
