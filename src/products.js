@@ -1,38 +1,38 @@
 export default [
   {
-    sku: 'SK1',
-    name: 'Princess Mini-Figure Set #1',
+    sku: 'SK001',
+    name: 'LEGO City Space Port Utility Shuttle Building Kit (60078)',
     quantity: 12,
-    price: 14.69,
+    price: 41.85,
     image: {
-      src: 'https://images-na.ssl-images-amazon.com/images/I/71mdlG1gj7L._SX522_.jpg'
+      src: 'https://images-na.ssl-images-amazon.com/images/I/91c8gZUkVQL._SX522_.jpg'
     }
   },
   {
-    sku: 'SK2',
-    name: 'Princess Small Hand Bag',
-    price: 5.99,
+    sku: 'SK002',
+    name: 'LEGO Creator Mighty Dinosaurs Building Kit (31058)',
+    price: 14.99,
     quantity: 8,
     image: {
-      src: 'https://images-na.ssl-images-amazon.com/images/I/71WtXfhsiEL._SX522_.jpg'
+      src: 'https://images-na.ssl-images-amazon.com/images/I/81eKp8eBZuL._SX522_.jpg'
     }
   },
   {
-    sku: 'SK3',
-    name: 'Princess Balloons',
-    price: 2.00,
+    sku: 'SK003',
+    name: 'LEGO Creator Vacation Getaways Building Kit (31052)',
+    price: 57.39,
     quantity: 4,
     image: {
-      src: 'https://images-na.ssl-images-amazon.com/images/I/61B5z29ySwL._SX522_.jpg'
+      src: 'https://images-na.ssl-images-amazon.com/images/I/91mz-HGcTyL._SX522_.jpg'
     }
   },
   {
-    sku: 'SK4',
-    name: 'Frozen Tiara Crown',
-    price: 6.10,
+    sku: 'SK004',
+    name: 'LEGO City Space Utility Vehicle (30315)',
+    price: 9.95,
     quantity: 1,
     image: {
-      src: 'https://images-na.ssl-images-amazon.com/images/I/71-mKgn-lDL._SX522_.jpg'
+      src: 'https://images-na.ssl-images-amazon.com/images/I/51BeSvIb2TL._SX522_.jpg'
     }
   }
 ];
