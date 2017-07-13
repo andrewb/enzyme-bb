@@ -1,10 +1,10 @@
 import React from 'react';
-import Inventory from './components/Inventory';
-import Toggle from './components/Toggle';
-import products from './products';
 import { render } from 'react-dom';
 import 'stylesheets/base.scss';
 import 'stylesheets/components/app.scss';
+import Inventory from './components/Inventory';
+import Toggle from './components/Toggle';
+import products from './products';
 
 class App extends React.Component {
   constructor(props) {
@@ -32,7 +32,7 @@ class App extends React.Component {
   }
   render() {
     const props = {
-      products: this.state.products.map((p) => (
+      products: this.state.products.map(p => (
         Object.assign({}, p, { onAddToCart: this.onAddToCart })
       ))
     };
