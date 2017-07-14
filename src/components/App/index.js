@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Inventory from '../Inventory';
 import Toggle from '../Toggle';
-import products from '../../products';
+import products from '../../data/products';
 import './app.scss';
 
 class App extends Component {
