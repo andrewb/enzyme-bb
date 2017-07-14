@@ -10,9 +10,12 @@ describe('<Button />', () => {
   });
 
   it('executes `onClick` on click', () => {
+    // NOTE: This is an example of using a mock function and simulated interaction
     const onClick = jest.fn();
     const wrapper = shallow(<Button onClick={onClick}><span>Hello</span></Button>);
+    // Simulate a click
     wrapper.find('.button').simulate('click');
+    // Did it get called?
     expect(onClick).toBeCalled();
   });
 });

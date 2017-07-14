@@ -1,6 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
 import App from 'components/App';
-import 'styles/index.scss';
+import products from './data/products';
+import './styles/index.scss';
 
-render(<App />, document.getElementById('root'));
+render(
+  <App products={products} />,
+  document.getElementById('root')
+);

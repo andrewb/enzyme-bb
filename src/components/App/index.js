@@ -1,14 +1,14 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Inventory from '../Inventory';
 import Toggle from '../Toggle';
-import products from '../../data/products';
 import './app.scss';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      products,
+      products: props.products,
       cart: 0
     };
     this.onAddToCart = this.onAddToCart.bind(this);
@@ -16,7 +16,8 @@ class App extends Component {
   onAddToCart(sku) {
     // Add the product to the cart
     // This simply increments the cart count and decrements the quantity of the
-    // chosen product. Note, IRL use something like redux...
+    // chosen product.
+    // NOTE, IRL use something like redux...
     this.setState({
       cart: this.state.cart + 1,
       products: this.state.products.map((p) => {
@@ -46,5 +47,19 @@ class App extends Component {
     );
   }
 }
+
+App.defaultProps = {
+  products: []
+};
+
+App.propTypes = {
+  products: PropTypes.arrayOf(PropTypes.shape({
+    sku: PropTypes.string,
+    name: PropTypes.string,
+    quantity: PropTypes.number,
+    price: PropTypes.number,
+    image: PropTypes.object
+  }))
+};
 
 export default App;

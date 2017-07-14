@@ -9,6 +9,9 @@ describe('<Toggle />', () => {
     expect(wrapper.find('.toggle__button').exists()).toBe(true);
   });
 
+  // NOTE: here we are testing that a button click changes the component's state.
+  // We're not concerned with how it does it (e.g. which internal method is
+  // called). We're only concerned that the behavior works as we expect.
   it('toggles `this.state.isOpen` on <Button /> click', () => {
     const wrapper = shallow(<Toggle><div>Hello</div></Toggle>);
     const button = wrapper.find('.toggle__button').find(Button);

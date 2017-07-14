@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders correctly 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="app__cart"
+  >
+    <div
+      className="toggle"
+    >
+      <div
+        className="toggle__button toggle__button--is-closed"
+      >
+        <button
+          className="button"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="toggle__label"
+          >
+            Show Cart (0)
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="inventory"
+  >
+    <header
+      className="header"
+    >
+      <h1>
+        Our Products
+      </h1>
+    </header>
+    <ul
+      className="inventory__list"
+    >
+      <li
+        className="inventory__list-item"
+      >
+        <div
+          className="product"
+        >
+          <div
+            className="product__image"
+          >
+            <img
+              alt="Product - Product Name"
+              src="https://foo.bar/baz.jpg"
+            />
+          </div>
+          <div
+            className="product__details"
+          >
+            <h1
+              className="product__name"
+            >
+              Product Name
+            </h1>
+            <div
+              className="product__sku"
+            >
+              xyz
+            </div>
+            <div
+              className="product__price"
+            >
+              $
+              100.00
+            </div>
+            <div>
+              <div
+                className="product__availability"
+              >
+                <span
+                  className="product__quantity"
+                >
+                  10
+                </span>
+                 in Stock
+              </div>
+              <div
+                className="product__cart-button"
+              >
+                <button
+                  className="button"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <span>
+                    Add to Cart
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

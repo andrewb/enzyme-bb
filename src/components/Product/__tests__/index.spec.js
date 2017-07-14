@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import Button from '../../Button';
 import Product from '../index';
 
+// NOTE: This is a useful pattern for components that require a lot of props!
 const getProps = ({
   sku = '123',
   name = 'Hat',
@@ -22,7 +23,7 @@ const getProps = ({
 describe('<Product />', () => {
   it('renders the product name', () => {
     const wrapper = shallow(
-      <Product sku="123" name="Hat" price={1} quantity={2} onAddToCart={() => {}} />
+      <Product {...getProps({})} />
     );
     expect(wrapper.find('.product__name').text()).toEqual('Hat');
   });
