@@ -1,0 +1,11 @@
+@import "../../styles/vars/colors";
+
+.button {
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1em;
+  background: $color-action;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}

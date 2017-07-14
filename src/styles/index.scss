@@ -1,4 +1,4 @@
-@import "helpers/colors";
+@import "vars/colors";
 
 html, body {
   margin: 0;
@@ -17,14 +17,4 @@ html {
 
 h1 {
   margin: 0;
-}
-
-button {
-  padding: 1em;
-  font-weight: bold;
-  font-size: 1em;
-  background: $color-action;
-  border: none;
-  cursor: pointer;
-  outline: none;
 }

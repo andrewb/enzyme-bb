@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import React from 'react';
-import { trim } from 'lodash';
-import 'stylesheets/components/toggle.scss';
+import React, { Component } from 'react';
+import Button from '../Button';
+import './toggle.scss';
 
-class Toggle extends React.Component {
+class Toggle extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,12 +16,13 @@ class Toggle extends React.Component {
     this.setState({ isOpen: !this.state.isOpen });
   }
   render() {
-    const btnClasses = `toggle__button toggle__button--is-${this.state.isOpen ? 'open' : 'closed'}`;
     return (
       <div className="toggle">
-        <button className={btnClasses} onClick={this.onToggleHandler}>
-          {trim(`${this.state.isOpen ? 'Hide' : 'Show'} ${this.props.label}`)}
-        </button>
+        <div className={`toggle__button toggle__button--is-${this.state.isOpen ? 'open' : 'closed'}`}>
+          <Button onClick={this.onToggleHandler}>
+            <span className="toggle__label">{`${this.state.isOpen ? 'Hide' : 'Show'} ${this.props.label}`}</span>
+          </Button>
+        </div>
         {this.state.isOpen &&
           <div className="toggle__content">
             {this.props.children}

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import 'stylesheets/components/header.scss';
+import './header.scss';
 
 function Header({ title }) {
   return (

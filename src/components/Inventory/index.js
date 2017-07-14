@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import 'stylesheets/components/inventory.scss';
 import Product from '../Product';
 import Header from '../Header';
+import './inventory.scss';
 
 function Inventory({ products }) {
   return (

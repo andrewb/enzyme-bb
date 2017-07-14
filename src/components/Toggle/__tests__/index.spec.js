@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import Button from '../../Button';
 import Toggle from '../index';
 
 describe('<Toggle />', () => {
@@ -8,15 +9,16 @@ describe('<Toggle />', () => {
     expect(wrapper.find('.toggle__button').exists()).toBe(true);
   });
 
-  it('toggles `this.state.isOpen` on click', () => {
+  it('toggles `this.state.isOpen` on <Button /> click', () => {
     const wrapper = shallow(<Toggle><div>Hello</div></Toggle>);
+    const button = wrapper.find('.toggle__button').find(Button);
     // Close it
     wrapper.setState({ isOpen: false });
     // Open it
-    wrapper.find('.toggle__button').simulate('click', { preventDefault() {} });
+    button.simulate('click', { preventDefault() {} });
     expect(wrapper.state('isOpen')).toBe(true);
     // Close it again...
-    wrapper.find('.toggle__button').simulate('click', { preventDefault() {} });
+    button.simulate('click', { preventDefault() {} });
     expect(wrapper.state('isOpen')).toBe(false);
   });
 
@@ -46,6 +48,6 @@ describe('<Toggle />', () => {
 
   it('shows a custom label', () => {
     const wrapper = shallow(<Toggle label="My Label!"><div>Hello</div></Toggle>);
-    expect(wrapper.find('button').text()).toContain('My Label!');
+    expect(wrapper.find('.toggle__label').text()).toContain('My Label!');
   });
 });

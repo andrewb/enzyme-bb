@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import React from 'react';
-import 'stylesheets/components/product.scss';
+import React, { Component } from 'react';
 import Button from '../Button';
+import './product.scss';
 
-class Product extends React.Component {
+class Product extends Component {
   constructor(props) {
     super(props);
     this.onAddToCartHandler = this.onAddToCartHandler.bind(this);
